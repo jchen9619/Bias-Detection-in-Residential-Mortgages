@@ -17,9 +17,10 @@
 ## Project Objective
 [(Back to top)](#table-of-contents)
 <br>
-Under the Fair Housing Act, it is illegal for banks to deny mortgages on the basis of race, color, religion, national origin, handicap, familial status or sex of the applicant. The rise of Automated Underwriting Systems (AUS) enables algorithms to decide on mortgage applications faster than the traditionally manual review process. However, as financial institutions move towards more data-driven processes, understanding the underlying biases in these algorithms, as well as the underwriting process in general, is the first step to ensuring equitable outcomes. Leveraging data on mortgage lending transactions in 2021 from the Federal Financial Institutions Examination Council (FFIEC) in the state of New York, this project aims to provide insight on the existence of bias based on protected characteristics in the mortgage underwriting process contains three sections.
+Under the Fair Housing Act, it is illegal for banks to deny mortgages on the basis of race, color, religion, national origin, handicap, familial status or sex of the applicant. The rise of Automated Underwriting Systems (AUS) enables algorithms to decide on mortgage applications faster than the traditionally manual review process. However, as financial institutions move towards more data-driven processes, understanding the underlying biases in these algorithms, as well as the underwriting process in general, is the first step to ensuring equitable outcomes. Leveraging data on mortgage lending transactions in 2021 from the Federal Financial Institutions Examination Council (FFIEC) in the state of New York, this project aims to provide insight on 
+features important for mortgage approval, particularly if they include protected characteristics. This project contains the following three sections. 
 
-1. Hypothesis Testing: ___ <br>
+1. Hypothesis Tests: ___ <br>
 
 2. Dimensionality Reduction via PCA: ____ <br>
 
@@ -28,16 +29,11 @@ Under the Fair Housing Act, it is illegal for banks to deny mortgages on the bas
 ## Data Source
 [(Back to top)](#table-of-contents)
 <br>
-**10k Reports for FY2021 from Securities and Exchange Commission (SEC):** <br>
-- [Pfizer Inc.](http://www.sec.gov/Archives/edgar/data/0000078003/000007800322000027/pfe-20211231.htm) <br>
-- [Moderna, Inc.](http://www.sec.gov/Archives/edgar/data/1682852/000168285222000012/mrna-20211231.htm) <br>
-- [Johnson and Johnson](http://www.sec.gov/Archives/edgar/data/200406/000020040622000022/jnj-20220102.htm) <br>
-- [Eli Lilly and Company](http://www.sec.gov/Archives/edgar/data/59478/000005947822000068/lly-20211231.htm) <br>
-- [AbbVie Inc.](http://www.sec.gov/Archives/edgar/data/0001551152/000155115222000007/abbv-20211231.htm) <br>
+**[Federal Financial Institutions Examination Council 2021 Loan/Application Records](INSERT LINK - PUT ZIP IN REPO):** <br>
 
 **[Data Dictionary](https://ffiec.cfpb.gov/documentation/2021/lar-data-fields)** <br>
 
-## Text Extraction and Cleaning
+## Preprocessing
 [(Back to top)](#table-of-contents)
 <br>
 The following table displays the amount of stop words and punctuations removed from the original text. 35-45% of total word count were removed for the five companies. 
