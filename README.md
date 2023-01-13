@@ -1,33 +1,29 @@
 # 
-<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vidyard.com%2Fblog%2Freal-estate-video-marketing%2F&psig=AOvVaw130pizehW3YHWsOQoH_wXZ&ust=1673652535838000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCMitp9mXw_wCFQAAAAAdAAAAABAD">
+<img src="https://www.vidyard.com/media/real-estate-video-marketing-1920x1080-1.jpg">
 
-# Bias Detection for Mortgages Approvals
-[View PDF](https://github.com/jchen9619/Sentiment-Analysis-for-SEC-10-k-Reports/blob/main/10K%20Sentiment%20Analysis.pdf)<br>
-[View Jupyter Notebook](https://github.com/jchen9619/Sentiment-Analysis-for-SEC-10-k-Reports/blob/main/10K-Sentiment-Analysis.ipynb) <br>
-
+# Bias Detection in Mortgages Approval Process
 
 ## Table of Contents
 - [Project Objective](#project-objective)
 - [Data Source](#data-source) 
-- [Text Extraction and Cleaning](#text-extraction-and-cleaning) 
-- [Comparison of Sentiment Word Frequency](#comparison-of-sentiment-word-frequency)  
-- [Identification of Top Sentiment Words](#identification-of-top-sentiment-words)  
+- [Preprocessing](#preprocessing) 
+    - Filter
+- [Hypothesis Tests](#hypothesis-tests): run on ny_filt, control on debt-income
+- [PCA: Dimensionality Reduction](#pca-dimensionality-reduction)  
+- [Logistic Regression](#logistic-regression)  
 - [Methods Used](#methods-used)
 - [Technologies](#technologies)
 
 ## Project Objective
 [(Back to top)](#table-of-contents)
 <br>
-Sentiment analysis has been increasingly popular in finance as text processing produces valuable insight without reading lengthy documents in their entirety. Leveraging multiple natural language processing techniques, this project compares the overall sentiment of fiscal year 2021 10-k financial reports for five pharmaceutical companies: Pfizer Inc., Moderna, Inc., Johnson & Johnson, Eli Lilly and Company and AbbVie Inc, based on text in items 1A. Risk Factors and 7. Management's Discussion and Analysis of Financial Condition and Results of Operations. The project contains three sections.
+Under the Fair Housing Act, it is illegal for banks to deny mortgages on the basis of race, color, religion, national origin, handicap, familial status or sex of the applicant. The rise of Automated Underwriting Systems (AUS) enables algorithms to decide on mortgage applications faster than the traditionally manual review process. However, as financial institutions move towards more data-driven processes, understanding the underlying biases in these algorithms, as well as the underwriting process in general, is the first step to ensuring equitable outcomes. Leveraging data on mortgage lending transactions in 2021 from the Federal Financial Institutions Examination Council (FFIEC) in the state of New York, this project aims to provide insight on the existence of bias based on protected characteristics in the mortgage underwriting process contains three sections.
 
-1. Text Extraction and Cleaning: <br>
-The following initial steps were performed to prepare the reports for further analysis: 
-- Convert HTML to PDFs with PDFKit
-- Extract items 1A and 7 PyPDF and RegEx key word search
-- Transform all words to lower case
-- Remove punctuations and stop words (non-meaningful words that do not add much information to a sentence, e.g. “a”, “the”, “is”, “are”, etc.) 
-2. Comparison of Sentiment Word Frequency: This section tokenizes the remaining non-stop-words, and culminates in a table that shows total positive and negative sentiment words as absolute numbers and as a percentage of total non-stop-words. This is done in the scope of Item 1A, Item 7 and these two sections combined. <br>
-3. Identification of Top Sentiment Words: For each company, the top 10 most frequent sentiment words in items 1A and 7 are displayed. Searching these words in their respective sections produce meaningful insight on a companies' financial and operational developments in the fiscal year. 
+1. Hypothesis Testing: ___ <br>
+
+2. Dimensionality Reduction via PCA: ____ <br>
+
+3. Logistic Regression: ____ <br>
 
 ## Data Source
 [(Back to top)](#table-of-contents)
@@ -39,8 +35,7 @@ The following initial steps were performed to prepare the reports for further an
 - [Eli Lilly and Company](http://www.sec.gov/Archives/edgar/data/59478/000005947822000068/lly-20211231.htm) <br>
 - [AbbVie Inc.](http://www.sec.gov/Archives/edgar/data/0001551152/000155115222000007/abbv-20211231.htm) <br>
 
-**Dictionary of Sentiment Words:** <br>
-- [Loughran-McDonald Master Dictionary w/ Sentiment Word Lists](https://sraf.nd.edu/loughranmcdonald-master-dictionary/)
+**[Data Dictionary](https://ffiec.cfpb.gov/documentation/2021/lar-data-fields)** <br>
 
 ## Text Extraction and Cleaning
 [(Back to top)](#table-of-contents)
