@@ -20,11 +20,21 @@
 Under the Fair Housing Act, it is illegal for banks to deny mortgages on the basis of race, color, religion, national origin, handicap, familial status or sex of the applicant. The rise of Automated Underwriting Systems (AUS) enables algorithms to decide on mortgage applications faster than the traditionally manual review process. However, as financial institutions move towards more data-driven processes, understanding the underlying biases in these algorithms, as well as the underwriting process in general, is the first step to ensuring equitable outcomes. Leveraging data on mortgage lending transactions in 2021 from the Federal Financial Institutions Examination Council (FFIEC) in the state of New York, this project aims to provide insight on 
 features important for mortgage approval, particularly if they include protected characteristics. This project contains the following three sections. 
 
-1. Hypothesis Tests: ___ <br>
+1. Dimensionality Reduction via PCA: ____ <br>
+- Broader question: what features contribute the most variation in the dataset? (reword if necessary https://betterdatascience.com/feature-importance-python/)
 
-2. Dimensionality Reduction via PCA: ____ <br>
+2. Hypothesis Tests: ___ <br>
+- Control variables: test among applicants with comparable creditworthiness, neighborhood, and applying to similar loan product --> do protected characteristics matter? 
+
+
 
 3. Logistic Regression: ____ <br>
+- Loop through the principle components 
+- What is the best model? 
+- Model selection within race: intersectionality
+    - "sex is not significant for white applicants but for blacks/POC"
+    - look at # of obs for each race group --> is it balanced enough to be feasible? 
+
 
 ## Data Source
 [(Back to top)](#table-of-contents)
